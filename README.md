@@ -14,7 +14,7 @@ The Task:
 
 One task that game administrators have to do is to create new quests on a regular basis for the players. This involves making a new entry into the Quest table for the new quest for a future day with a given theme and region. And then assigning loot — adding to the Loot table — for the new quest. 
 
-I have been automate this task with an application program, let us call it CreateQuest. It was created in Java using JDBC; so, CreateQuest.java. The app connects with Questeme's PostgreSQL database server at db with the RR-DB database to make the necessary updates on request.
+I have automated this task with an application program, let us call it CreateQuest. It was created in Java using JDBC; so, CreateQuest.java. The app connects with Questeme's PostgreSQL database server at db with the RR-DB database to make the necessary updates on request.
 
 
 Specification:
@@ -60,7 +60,7 @@ The app uses a driver to connect to the PSQL db. The driver we are using is post
 
 Authentication:
 
-The way this would be best set up, say, at Questeme, would be via SSL and certificates, to provide a “drop-through” authentication. This although would be difficult to do for this project, thus instead, we shall use a .pg_pass file in the home directory on the local machine. In that file, you will have a line like
+The way this would be best set up, say, at Questeme, would be via SSL and certificates, to provide a “drop-through” authentication. This although would be difficult to do for this project, thus instead, we shall use a .pg_pass file in the home directory on the local machine. In that file, I will have a line like
 
 db:*:username:username:not_my_password
 
